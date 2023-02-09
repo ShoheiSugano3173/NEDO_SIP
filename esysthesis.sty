@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
-% ƒy[ƒWƒŒƒCƒAƒEƒg‚Ìİ’è
+% ãƒšãƒ¼ã‚¸ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã®è¨­å®š
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setlength{\topmargin}{0mm}
 %\setlength{\headheight}{2mm}
@@ -13,14 +13,14 @@
 %\setlength{\columnsep}{10mm}
 %\setlength{\abovecaptionskip}{0pt}
 %\setlength{\belowcaptionskip}{-3pt}
-\setlength{\abovedisplayskip}{2.5mm} % ”®ã•”‚Ìƒ}[ƒWƒ“
-\setlength{\belowdisplayskip}{2.5mm} % ”®‰º•”‚Ìƒ}[ƒWƒ“
+\setlength{\abovedisplayskip}{2.5mm} % æ•°å¼ä¸Šéƒ¨ã®ãƒãƒ¼ã‚¸ãƒ³
+\setlength{\belowdisplayskip}{2.5mm} % æ•°å¼ä¸‹éƒ¨ã®ãƒãƒ¼ã‚¸ãƒ³
 %\renewcommand\baselinestretch{0.9}
 \renewcommand\baselinestretch{1.2}
 \normalsize\relax
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% •¶Í‘ÌÙ‚Ìİ’èiƒtƒ‰ƒNƒVƒ‡ƒ“‚ğƒ‹[ƒY‚Éİ’èj
+% æ–‡ç« ä½“è£ã®è¨­å®šï¼ˆãƒ•ãƒ©ã‚¯ã‚·ãƒ§ãƒ³ã‚’ãƒ«ãƒ¼ã‚ºã«è¨­å®šï¼‰
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\textfraction{.001}
 \def\topfraction{.9}
@@ -31,33 +31,33 @@
 \def\dblfloatpagefraction{.99}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% –¼Ì‚Ì•ÏX
+% åç§°ã®å¤‰æ›´
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\renewcommand{\bibname}{Ql•¶Œ£}
-% ‰pŒê‚ª—Ç‚¢‚Æ‚«
+\renewcommand{\bibname}{å‚è€ƒæ–‡çŒ®}
+% è‹±èªãŒè‰¯ã„ã¨ã
 %\renewcommand{\figurename}{Fig.}
 %\renewcommand{\tablename}{Table}
-% “ú–{Œê‚ª—Ç‚¢‚Æ‚«
-\renewcommand{\figurename}{}}
-\renewcommand{\tablename}{•\}
+% æ—¥æœ¬èªãŒè‰¯ã„ã¨ã
+\renewcommand{\figurename}{å›³}
+\renewcommand{\tablename}{è¡¨}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ‹r’‚Ìİ’è
+% è„šæ³¨ã®è¨­å®š
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \let\footnote=\endnote
 \renewcommand{\notesname}{} 
 
 \makeatletter
-\def\@makeenmark{\hbox{\small ${<Œã’\kern0pt\@theenmark>}$}}
-%\def\@makeenmark{\hbox{$^{<‹r’\kern0pt\@theenmark>}$}}
+\def\@makeenmark{\hbox{\small ${<å¾Œæ³¨\kern0pt\@theenmark>}$}}
+%\def\@makeenmark{\hbox{$^{<è„šæ³¨\kern0pt\@theenmark>}$}}
 %\def\enoteformat{\rightskip\z@ \leftskip\z@ \parindent=1.8em
 \def\enoteformat{\rightskip\z@ \leftskip=3.6em \parindent\z@
-     \leavevmode\llap{\hbox{${<Œã’\@theenmark>~~}$}}}
-     %\leavevmode\llap{\hbox{$^{<‹r’\@theenmark>}$}}}
+     \leavevmode\llap{\hbox{${<å¾Œæ³¨\@theenmark>~~}$}}}
+     %\leavevmode\llap{\hbox{$^{<è„šæ³¨\@theenmark>}$}}}
 
 \newcommand{\listnotesname}{%
-  \chapter*{Œã’}
+  \chapter*{å¾Œæ³¨}
 \def\enotesize{\normalsize}
 %\def\ennotesize{\large}
 \vspace{-10mm}
@@ -66,12 +66,12 @@
 \makeatother
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Q and A ‚Ìİ’è
+% Q and A ã®è¨­å®š
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcounter{linenumber}
 \newenvironment{questions}{%
 \begin{list}{%
-	{\bfm¿–â~\arabic{linenumber}n}}{%
+	{\bfï¼»è³ªå•~\arabic{linenumber}ï¼½}}{%
 	\usecounter{linenumber}%
 	\setlength{\baselineskip}{10pt}%
 	\setlength{\itemsep}{10pt}%
@@ -83,7 +83,7 @@
 	\setlength{\parsep}{10pt}}}%
 {\end{list}}
 
-\def\answer#1{\vspace{-5mm}\item[{\bfm‰ñ“š~\arabic{linenumber}n}] #1 \\}
+\def\answer#1{\vspace{-5mm}\item[{\bfï¼»å›ç­”~\arabic{linenumber}ï¼½}] #1 \\}
 \def\question#1#2{\item #2~~\\{\bf#1}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % optional definition
@@ -114,8 +114,8 @@
 \def\belongcourse#1{\gdef\@belongcourse{#1}}
 \def\ebelongdept#1{\gdef\@ebelongdept{#1}}
 \def\ebelongcourse#1{\gdef\@ebelongcourse{#1}}
-\def\datestamp#1#2{\gdef\@datestamp{#1”N~ #2Œ}}%–{Œ³
-%\def\datestamp#1#2#3{\gdef\@datestamp{#1”N~ #2Œ~ #3“ú}}%‚·‚ª‚Á‚¿”Åƒ[ƒ~ƒŒƒ|ì¬—p(‘²˜_‚ÍƒRƒR‚ğƒRƒƒ“ƒgƒAƒEƒg) Modified by sugacchi 2012, June 21
+\def\datestamp#1#2{\gdef\@datestamp{#1å¹´~ #2æœˆ}}%æœ¬å…ƒ
+%\def\datestamp#1#2#3{\gdef\@datestamp{#1å¹´~ #2æœˆ~ #3æ—¥}}%ã™ãŒã£ã¡ç‰ˆã‚¼ãƒŸãƒ¬ãƒä½œæˆç”¨(å’è«–æ™‚ã¯ã‚³ã‚³ã‚’ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆ) Modified by sugacchi 2012, June 21
 \def\thesistype#1{\gdef\@thesistype{#1}}
 \def\headshorttitle#1{\gdef\@headshorttitle{#1}}
 
@@ -127,7 +127,7 @@
 
 %%
 
-\def\birthday#1#2#3{\gdef\@birthday{#1”N~ #2Œ~ #3“ú}}
+\def\birthday#1#2#3{\gdef\@birthday{#1å¹´~ #2æœˆ~ #3æ—¥}}
 \def\hometown#1{\gdef\@hometown{#1}}
 \def\high_school#1{\gdef\@high_school{#1}}
 \def\nickname#1#2#3#4#5#6{
@@ -174,8 +174,8 @@
 \@ifundefined{@jnamea}
 	{
 	\gdef\titlecolumnlayout{lll}
-	\gdef\jnames{–¼‚ğ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢ & & }
-	\gdef\tpnames{–¼‚ğ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢ & & }
+	\gdef\jnames{æ°åã‚’è¨˜å…¥ã—ã¦ãã ã•ã„ & & }
+	\gdef\tpnames{æ°åã‚’è¨˜å…¥ã—ã¦ãã ã•ã„ & & }
 	}
 	{
 	\@ifundefined{@jnameb}
@@ -218,39 +218,38 @@
 %	\gdef\jtitles{{\LARGE\bf \@jtitlea}\\ \vspace{3mm}{\Large\bf \@jtitleb} }
 %	}
 %	{
-%	\gdef\@jtitlec{@\@jtitleb@}
+%	\gdef\@jtitlec{ã€€\@jtitlebã€€}
 %	\gdef\jtitles{{\LARGE\bf \@jtitlea}\\ \vspace{3mm}{\Large\bf \@jtitlec} }
 %	}
-\gdef\@jtitlec{@\@jtitleb@}
+\gdef\@jtitlec{ã€€\@jtitlebã€€}
 \gdef\jtitles{{\LARGE\bf \@jtitlea}\\ \vspace{3mm}{\Large\bf \@jtitlec} }
-\gdef\@etitlec{@\@etitleb@}
+\gdef\@etitlec{ã€€\@etitlebã€€}
 \gdef\etitles{{\Large\bf \@etitlea}\\ \vspace{3mm}{\large\bf \@etitlec} }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%% ó—Ìˆóƒy[ƒW %%%%%%%%%%%%%%%% 
-%% ó—Ìˆóƒy[ƒW‚ÍApdfƒtƒ@ƒCƒ‹‰»‚·‚é‚±‚Æ‚É‚È‚Á‚½‚½‚ßA“ü‚ê‚È‚¢‚±‚Æ‚É‚µ‚Ü‚µ‚½D
+%%%%%%%%%%%%%%%% å—é ˜å°ãƒšãƒ¼ã‚¸ %%%%%%%%%%%%%%%% 
+%% å—é ˜å°ãƒšãƒ¼ã‚¸ã¯ã€pdfãƒ•ã‚¡ã‚¤ãƒ«åŒ–ã™ã‚‹ã“ã¨ã«ãªã£ãŸãŸã‚ã€å…¥ã‚Œãªã„ã“ã¨ã«ã—ã¾ã—ãŸï¼
 \pagestyle{empty}
 %%\begin{center}
-%%{\Huge ó—Ìˆóƒy[ƒW}
+%%{\Huge å—é ˜å°ãƒšãƒ¼ã‚¸}
 %%\end{center}
 %%\clearpage
 %%\newpage
-%%%%%%%%%%%%%%%% •\† %%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%% è¡¨ç´™ %%%%%%%%%%%%%%%% 
 \vspace*{0cm}
 \makeatletter
 \begin{center}
 %%\includegraphics[width=15mm]{agumark.eps}
-%%{\Large \vspace*{2cm} \@nendo ”N“x \hspace{0.5cm} \@thesistype} \\
+%%{\Large \vspace*{2cm} \@nendo å¹´åº¦ \hspace{0.5cm} \@thesistype} \\
 %\def\ssimb{\includegraphics[width=25mm]{agumark.eps}}
-%\def\ssimb{\includegraphics[width=21mm]{CITmark.eps}}
-\def\ssimb{~}
+\def\ssimb{\includegraphics[width=21mm]{CITmark.eps}}
 \vspace*{-15mm}
 \hspace*{-10mm}
 \begin{tabular}{lr}
 \begin{minipage}{25mm} \ssimb \end{minipage}
 & \makebox[0.9\textwidth]{{
 \Large
-\vspace*{2cm} \hspace{20mm} \@nendo ”N“x \hspace{0.5cm} \@thesistype \hfill
+\vspace*{2cm} \hspace{20mm} \@nendo å¹´åº¦ \hspace{0.5cm} \@thesistype \hfill
  }}
 \end{tabular}
 %%%
@@ -281,12 +280,12 @@
 %\vspace{2cm}
 \end{center}
 \begin{center}
-{\Large	@@ \  @@ }\\
+{\Large	ã€€ã€€ \  ã€€ã€€ }\\
 \vspace{0.8cm}
 {\Large \@datestamp }\\
 \vspace{1.2cm}
 {\large \@belongcourse ~~\@belongdept \\
-@@} \\
+ã€€ã€€} \\
 \vspace{0.3cm}
 %{Minakata Laboratory, \@ebelongdept \\
 {\@ebelongdept \\
@@ -312,8 +311,8 @@
 \@ifundefined{@jnamea}
 	{
 	\gdef\titlecolumnlayout{lll}
-	\gdef\jnames{–¼‚ğ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢ & & }
-	\gdef\tpnames{–¼‚ğ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢ & & }
+	\gdef\jnames{æ°åã‚’è¨˜å…¥ã—ã¦ãã ã•ã„ & & }
+	\gdef\tpnames{æ°åã‚’è¨˜å…¥ã—ã¦ãã ã•ã„ & & }
 	}
 	{
 	\@ifundefined{@jnameb}
@@ -358,29 +357,29 @@
 %	\gdef\jtitles{{\LARGE\bf \@jtitlea}\\ \vspace{3mm}{\Large\bf \@jtitleb} }
 %	}
 %	{
-%	\gdef\@jtitlec{@\@jtitleb@}
+%	\gdef\@jtitlec{ã€€\@jtitlebã€€}
 %	\gdef\jtitles{{\LARGE\bf \@jtitlea}\\ \vspace{3mm}{\Large\bf \@jtitlec} }
 %	}
-\gdef\@jtitlec{@\@jtitleb@}
+\gdef\@jtitlec{ã€€\@jtitlebã€€}
 \gdef\jtitles{{\LARGE\bf \@jtitlea}\\ \vspace{0mm}{\Large\bf \@jtitlec} }
-\gdef\@etitlec{@\@etitleb@}
+\gdef\@etitlec{ã€€\@etitlebã€€}
 \gdef\etitles{{\Large\bf \@etitlea}\\ \vspace{0mm}{\large\bf \@etitlec} }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%% ó—Ìˆóƒy[ƒW %%%%%%%%%%%%%%%% 
-%% ó—Ìˆóƒy[ƒW‚ÍApdfƒtƒ@ƒCƒ‹‰»‚·‚é‚±‚Æ‚É‚È‚Á‚½‚½‚ßA“ü‚ê‚È‚¢‚±‚Æ‚É‚µ‚Ü‚µ‚½D
+%%%%%%%%%%%%%%%% å—é ˜å°ãƒšãƒ¼ã‚¸ %%%%%%%%%%%%%%%% 
+%% å—é ˜å°ãƒšãƒ¼ã‚¸ã¯ã€pdfãƒ•ã‚¡ã‚¤ãƒ«åŒ–ã™ã‚‹ã“ã¨ã«ãªã£ãŸãŸã‚ã€å…¥ã‚Œãªã„ã“ã¨ã«ã—ã¾ã—ãŸï¼
 \pagestyle{empty}
 %%\begin{center}
-%%{\Huge ó—Ìˆóƒy[ƒW}
+%%{\Huge å—é ˜å°ãƒšãƒ¼ã‚¸}
 %%\end{center}
 %%\clearpage
 %%\newpage
-%%%%%%%%%%%%%%%% •\† %%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%% è¡¨ç´™ %%%%%%%%%%%%%%%% 
 \makeatother
 
 \noindent
 {\Large
-\@nendo ”N“x \@thesistype \\
+\@nendo å¹´åº¦ \@thesistype \\
 ~~~~~\@belongcourse ~~\@belongdept \\
 ~~~~~\\
 ~~~~~\\
@@ -392,7 +391,7 @@
 {\Large\bf 
 \jtitles \\ \vspace{3mm}
 \etitles \\ \vspace{3mm}
-˜_•¶’˜Ò: \hspace{3mm}  \jnames~~(\enames )~~\stdnums
+è«–æ–‡è‘—è€…: \hspace{3mm}  \jnames~~(\enames )~~\stdnums
 }\\ 
 
 \vspace{10mm}
@@ -410,11 +409,11 @@
 
 {\large\bf
 \begin{tabular*}{145mm}{@{\extracolsep{\fill}}  l  p{110mm} }  \hline
-¶”NŒ“ú @& \@birthday \\
-og’n    @& \@hometown \\
-og‚Z   & \@high_school\\
-ƒjƒbƒNƒl[ƒ€ & \@nicknamea~~\@nicknameb~~\@nicknamec~~\@nicknamed~~\@nicknamee~~\@nicknamef \\
-ƒRƒƒ“ƒg		& \@comment@\\
+ç”Ÿå¹´æœˆæ—¥ ã€€& \@birthday \\
+å‡ºèº«åœ°    ã€€& \@hometown \\
+å‡ºèº«é«˜æ ¡   & \@high_school\\
+ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ  & \@nicknamea~~\@nicknameb~~\@nicknamec~~\@nicknamed~~\@nicknamee~~\@nicknamef \\
+ã‚³ãƒ¡ãƒ³ãƒˆ		& \@commentã€€\\
 \hline 
 \end{tabular*}
 }

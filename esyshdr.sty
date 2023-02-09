@@ -10,7 +10,7 @@
 \pagestyle{fancy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\@chapappinfancy#1{‘æ #1 Í}  
+\def\@chapappinfancy#1{ç¬¬ #1 ç« }  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\@makechapterhead#1{\hbox{}%
@@ -34,15 +34,15 @@
    \fi}\vskip3\Cvs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% ƒtƒbƒ^[Aƒwƒbƒ_[•\¦İ’è 
+%% ãƒ•ãƒƒã‚¿ãƒ¼ã€ãƒ˜ãƒƒãƒ€ãƒ¼è¡¨ç¤ºè¨­å®š 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \rfoot{~}
-%\rfoot{{\footnotesize \@nendo ”N“x \@thesistype}\\
+%\rfoot{{\footnotesize \@nendo å¹´åº¦ \@thesistype}\\
 %\vspace{-2mm}\hspace{5mm}{\footnotesize \jnames }}
 \cfoot{~}
 \lfoot{~}
 %\lfoot{{\footnotesize \@belongcourse ~\@belongdept}\\
-%\vspace{-2mm}{\footnotesize ’·”ö Œ¤‹†º}
+%\vspace{-2mm}{\footnotesize é•·å°¾ ç ”ç©¶å®¤}
 %}
 \rhead{\footnotesize \leftmark ~~~ \thepage}  
 %\rhead{~}
@@ -50,7 +50,7 @@
 %\lhead{~}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\def\ps@fancy{  
+\def\ps@@fancy{  
 \let\@mkboth\markboth  
 \@ifundefined{chapter}{\def\sectionmark##1{\markboth  
 {\ifnum \c@secnumdepth>\z@  
@@ -81,19 +81,19 @@
 %%%%\let\chapters@ve\chapter
 %%%%\def\chapter{\refstepcounter{page}\chapters@ve}
 
-\def\@chapapp##1{•t˜^ ##1} 
+\def\@chapapp##1{ä»˜éŒ² ##1} 
 \def\@chappos{} 
 \def\thechapter{\Alph{chapter}}  
 %%
-\def\@chapappinfancy##1{•t˜^ \hbox{\bf ##1}}  
+\def\@chapappinfancy##1{ä»˜éŒ² \hbox{\bf ##1}}  
 \def\thepage{\alph{chapter}\arabic{page}}
 
-\rfoot{{\footnotesize \@nendo ”N“x \@thesistype}\\
+\rfoot{{\footnotesize \@nendo å¹´åº¦ \@thesistype}\\
 \vspace{-2mm}\hspace{5mm}{\footnotesize \jnames }}
 \rhead{\footnotesize \leftmark ~~~ \alph{chapter}\arabic{page}}
 \cfoot{}  
 \lfoot{{\footnotesize \@belongcourse \@belongdept}\\
-%\vspace{-2mm}{\footnotesize ’·”ö Œ¤‹†º}
+%\vspace{-2mm}{\footnotesize é•·å°¾ ç ”ç©¶å®¤}
 }
 %%
 \@in@appendixtrue}
@@ -113,7 +113,7 @@
 %% 
 \renewenvironment{thebibliography}[1] 
 {\chapter*{\bibname}\@mkboth{\bibname}{\bibname}% 
-%% C³ \@mkboth ‚ğ \chapter* ‚Ìˆø”‚ÌŠO‚Éo‚µ‚½‚¾‚¯ 
+%% ä¿®æ­£ \@mkboth ã‚’ \chapter* ã®å¼•æ•°ã®å¤–ã«å‡ºã—ãŸã ã‘ 
    \list{\@biblabel{\@arabic\c@enumiv}}% 
         {\settowidth\labelwidth{\@biblabel{#1}}% 
          \leftmargin\labelwidth 
