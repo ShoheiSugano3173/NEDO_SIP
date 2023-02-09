@@ -1,9 +1,9 @@
 cd /d %~dp0
 
-platex -kanji=sjis main
-jbibtex main
+platex -kanji=utf8 main
+pbibtex main
 mendex main.glo -s esysnomencl.ist -o main.gls
-platex -kanji=sjis main
-platex -kanji=sjis main
+platex -kanji=utf8 main
+platex -kanji=utf8 main
 dvipdfmx main
 pause
